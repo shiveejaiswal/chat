@@ -18,7 +18,7 @@ Welcome to the Chat Interface project! This project is designed to showcase fron
 
 ## Demo
 
-You can check out the live version of this project [here](https://your-deployed-app-link.com) _(Replace with your live app URL)_.
+You can check out the live version of this project [here](https://your-deployed-app-link.com).
 
 ## Figma Design
 

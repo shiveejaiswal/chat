@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, ChangeEvent } from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -21,6 +21,10 @@ export function ChatWindow({ chat, onBack, messages }: ChatWindowProps) {
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
+
+  const handleMessageChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setNewMessage(e.target.value)
+  }
 
   if (!chat) {
     return (
@@ -80,7 +84,7 @@ export function ChatWindow({ chat, onBack, messages }: ChatWindowProps) {
         <div className="flex-1 bg-[#2A2A2A] rounded-full p-2">
           <Input
             value={newMessage}
-            onChange={(e) => setNewMessage(e.target.value)}
+            onChange={handleMessageChange}
             placeholder="Message..."
             className="bg-transparent border-none focus:ring-0 text-white placeholder-gray-400"
           />
@@ -92,4 +96,3 @@ export function ChatWindow({ chat, onBack, messages }: ChatWindowProps) {
     </div>
   )
 }
-
