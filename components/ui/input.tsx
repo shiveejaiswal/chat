@@ -1,9 +1,7 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
-
-// Use React.HTMLAttributes instead of InputHTMLAttributes
 export interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
-  className?: string; // Add className explicitly if needed
+  className?: string; 
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
