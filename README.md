@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chat Interface - Full Stack Intern Task 1
+
+Welcome to the Chat Interface project! This project is designed to showcase front-end skills by transforming a Figma design into a functional and responsive web chat interface.
+
+## Features
+
+- Display a list of chat conversations.
+- Let users click on a chat to view previous messages.
+- A message input area and a "Send" button (no actual backend functionality, just for demonstration).
+- Fully responsive and optimized for different screen sizes.
+- Use of dummy data to simulate chat history.
+
+## Technologies Used
+
+- **React.js** or **Next.js** (depending on which you choose to use)
+- HTML, CSS (Styled-components or CSS modules can be used for styling)
+- Dummy data to simulate chat messages and history
+
+## Demo
+
+You can check out the live version of this project [here](https://your-deployed-app-link.com) _(Replace with your live app URL)_.
+
+## Figma Design
+
+This project is based on the Figma design provided. You can access the Figma design [here](<https://www.figma.com/file/xmrJ2n2h0MzXVNlWQqqAZ0/Chat-Interface-(FSD-Task)?type=design&node-id=0-1&mode=design>).
 
 ## Getting Started
 
-First, run the development server:
+To get this project running locally on your machine:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (Version 12 or higher)
+- npm or yarn (for package management)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/shiveejaiswal/chat
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate into the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cd chat-interface
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   # Or if using yarn
+   yarn install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm start
+   # Or if using yarn
+   yarn start
+   ```
+
+   This should open the app in your browser at `http://localhost:3000` (or a similar port).
+   ``
+
+## What’s Next
+
+- Backend integration (for real-time chat and saving messages).
+- Adding more features like notifications, chat search, and user authentication.
